@@ -17,3 +17,19 @@ const mele = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le mele di almeno 7 cm di diametro. L'altro con le restanti.
+let meleSmall = [];
+let meleBig = [];
+
+mele.forEach((mela) => {
+
+
+  if (mela.diametro >= 7) {
+
+    meleBig.push(mela)
+  } else {
+    meleSmall.push(mela)
+  }
+}
+)
+
+console.log(meleBig, meleSmall)
